@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mua Bán Online</title>
+    <link href="muaban.css" rel="stylesheet">
+    <style>
+        #khungtrang{
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(248, 231, 214);
+        }
+        #bentrai{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            margin: 15px;
+        }
+        #bentrai .one{
+            color: orangered !important;;
+        }
+        #bentrai .two{
+            color: gray!important;
+            text-decoration: line-through;
+            font-size: 0.95em;
+        }
+        #bentren{
+            margin-left: 600px;
+            margin-top: 45px;
+            text-align: center;
+
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            border: 1px solid #E0E0E0E0;
+            border-radius: 5px;
+            height: 30px;
+        }
+         #bentren .dautru{
+            /* width: 100%; */
+            display: block!important;
+            /* height: 100%; */
+            text-align: center;
+            flex: 1;
+        }
+        #bentren .soluong{
+            border: none !important;
+            flex: 1;
+            /* width: 2em !important; */
+            width: 30px;
+            font-size: 1em;
+            text-align: center;
+        }
+        #bentren .daucong{
+            display: flex;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.3s;
+        }
+        #benduoi{
+            text-align: right;
+            vertical-align: middle;
+            margin-top: 10px;
+            margin-right: 6px;
+        }
+        #benduoi .mot{
+            font-size: 18px;
+            color:gray;
+        }
+        #benduoi .hai{
+            font-style: bold;
+            font-size: 15px;
+            margin-right: 10px;
+            text-align: center;
+            color:orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">    
+        <div class="menu">
+            <ul>
+                <li><h3><a href="webmuaban.html" class="web">MUA BÁN ONLINE</a></h3></li>
+                <li><input class="timkiem" type="text" placeholder="Tìm kiếm"></li>
+                <li><a class="sanpham" href="a">SẢN PHẨM</a>
+                    <div class="submenu">
+                        <a href="truyentranh.html"><p>TRUYỆN TRANH</p></a>
+                        <a href="truyenngan.html"><p>TRUYỆN NGẮN</p></a>
+                        <a href="lightnovel.html"><p>LIGHT NOVEL</p></a>
+                        <a href="vanhoc.html"><p>VĂN HỌC</p></a>
+                    </div>
+                </li>                
+                <li><a  href="a">THÔNG BÁO</a>
+                    <div class="thongbao">   
+                        <h4>Thông tin khuyến mãi</h4>                    
+                        <p>Siêu sale khuyến mãi hôm nay 12/10 nhanh tay đặt hàng ngay</p>
+                        <hr>
+                        <h4>Thông tin đơn hàng</h4>
+                        <p>Đơn hàng của bạn đã bàn giao cho đơn vị vận chuyển</p>
+                        <hr>
+                        <h4>Thông tin phát hành</h4>
+                        <p>Grimgar Ảo Ảnh Và Tro Tàn tập 12 đã phát hành. Đặt hàng ngay</p>
+                    </div>
+                </li>
+                <li><a class="giohang" href="giohang.html">GIỎ HÀNG</a></li>
+
+                <li><button onclick="" class="dangnhap">ĐĂNG NHẬP</button></li>
+            </ul>
+        </div>
+        <div class="bannerlist">
+            <p>GIỎ HÀNG</p>
+        </div>
+        <div id = "khungtrang">
+            <div>
+                <img src = "Images/naruto58.png" width="120px" height="170px" alt = "naruto58">
+            </div>
+            <div id = "bentrai">
+                <a>Naruto Tập 58</a>
+                <a class = "one">19.000đ</a>
+                <a class = "two">25.000đ</a>
+            </div>
+            <div id = "benphai" >
+                <div id = "bentren">
+                    <a class = "dautru" onclick = "dautru()"><img style="width: 20px; vertical-align: middle;" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_minus2x.png"></a>
+
+                    <a><input class ="soluong" type="text" value="1" maxlength="12px"></a>
+    
+                    <a  onclick = "daucong()"><img style="width: 20px; vertical-align: middle;" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_plus2x.png"></a>
+                </div>
+                <div id ="benduoi">
+                    <a class = "mot">thành tiền</a><br>
+                    <a class = "hai">19.000đ</a>
+                </div>
+            </div>
+         
+        </div>
+        <div id = "khungtrang">
+            <div>
+                <img src = "Images/seraph1.png" width="120px" height="170px" alt = "naruto58">
+            </div>
+            <div id = "bentrai">
+                <a>Thiên Thần Diệt Thế Tập 1</a>
+                <a class = "one">19.000đ</a>
+                <a class = "two">25.000đ</a>
+            </div>
+            <div id = "benphai" >
+                <div id = "bentren">
+                    <a class = "dautru" onclick = "dautru()"><img style="width: 20px; vertical-align: middle;" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_minus2x.png"></a>
+
+                    <a><input class ="soluong" type="text" value="1" maxlength="12px"></a>
+    
+                    <a  onclick = "daucong()"><img style="width: 20px; vertical-align: middle;" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_plus2x.png"></a>
+                </div>
+                <div id ="benduoi">
+                    <a class = "mot">thành tiền</a><br>
+                    <a class = "hai">19.000đ</a>
+                </div>
+            </div>
+        </div>
+        <div id = "khungtrang">
+            <div>
+                <img src = "Images/spy1.png" width="120px" height="170px" alt = "naruto58">
+            </div>
+            <div id = "bentrai">
+                <a>Spy x Family Tập 1</a>
+                <a class = "one">19.000đ</a>
+                <a class = "two">25.000đ</a>
+            </div>
+            <div id = "benphai" >
+                <div id = "bentren">
+                    <a class = "dautru" onclick = "dautru()"><img style="width: 20px; vertical-align: middle;" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_minus2x.png"></a>
+
+                    <a><input class ="soluong" type="text" value="1" maxlength="12px"></a>
+    
+                    <a  onclick = "daucong()"><img style="width: 20px; vertical-align: middle;" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_plus2x.png"></a>
+                </div>
+                <div id ="benduoi">
+                    <a class = "mot">thành tiền</a><br>
+                    <a class = "hai">19.000đ</a>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+</body>
+</html>

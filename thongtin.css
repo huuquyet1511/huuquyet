@@ -1,0 +1,74 @@
+@charset "utf-8";
+.thongtin{
+    display: flex;
+    flex-direction: row;  
+    height: 530px;  
+}
+.hinh{
+    width: 25%;
+    background-color: rgb(248, 231, 214);
+}
+img{
+    width: 8cm;
+    height: 11cm;
+}
+.chitiet{
+    width: 75%;
+    background-color: rgb(248, 231, 214);
+    overflow:scroll;
+}
+#lienquan{
+    width: 100%;
+    overflow:scroll;
+}
+#lienquanf{margin-left: 20px;}
+.mua{
+    width:300px;
+    background-color: rgb(255, 153, 116);
+    border-radius: 5px;
+    border-color: rgb(255, 153, 116);
+    height: 30px;
+}
+.ten{font-size: 30px;color: rgb(250, 28, 28); margin: 20px;}
+.space{
+    margin: 20px;
+}
+.chitiet0{
+    display: flex;
+    flex-direction: row;
+}
+.chitiet1 , .chitiet2{width: 50%; font-size: 15px;margin: 20px;}
+.gia{
+    font-size: 40px;
+    margin: 20px;
+    color: rgb(250, 33, 33);
+}
+.soluong{
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+}
+.diachi{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+}
+.chitiet3, .chitiet4{width: 30%; font-size: 15px;margin: 20px;}
+.cong, .tru{
+    width: 25px; 
+    height: 25px; 
+    border: 0px; 
+    background-color: white;
+    text-align: center;
+    font-size: 20px;    
+}
+#soluong{
+    width: 10px; 
+    height: 25px; 
+    border: 0px; 
+    background-color: white;
+    text-align: center;
+    font-size: 17px;
+}
+.dem{background-color: white;}
+

@@ -1,0 +1,132 @@
+@charset "utf-8";
+*{
+    margin: 3px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: column;    
+}
+.timkiem{
+    width: 600px;
+    height: 30px;
+}
+.web{text-shadow: 3px 3px 3px rgb(250, 119, 43);}
+.menu{
+    width: 100%;
+    text-align: left;
+    background-color: rgb(251, 255, 196);
+    
+}
+.menu a{color: rgb(250, 119, 43);}
+.menu li{display: inline-block; position: relative;}
+.menu li .submenu, .menu li .thongbao{
+    display: none;
+    position: absolute;
+}
+.menu li:hover .submenu, .menu li:hover .thongbao{display: block;}
+.dangnhap{
+    color: rgb(250, 119, 43);
+    width: 100px;
+    height: 40px;
+    background-color: rgb(248, 214, 150);
+    border-color: rgb(251, 255, 196);
+    font-weight: bold;
+    border-radius: 7px;
+}
+.submenu{
+    background-color: rgb(251, 255, 196);
+    font-size: 15px;
+    width: 135px;
+    text-align: center;
+}
+.thongbao{
+    background-color: rgb(251, 255, 196);
+    width: 300px;
+    min-height: 300px;
+    font-size: 15px;
+}
+.submenu p:hover{ background-color: rgb(221, 191, 173);}
+.main a{text-decoration: none;}
+.truyentranh img,.lightnovel img{
+    width: 160px;
+    height: 215px;    
+}
+.truyentranh, .lightnovel{
+    display: flex;
+    flex-direction: row;
+    min-height: 330px;
+}
+.truyentranh div, .lightnovel div{
+    width: 173px;
+    margin: 5px;
+    background-color: rgb(248, 227, 212);
+    
+}
+.truyentranh div:hover, .lightnovel div:hover{
+    width: 173px;
+    box-shadow:0px 0px 5px rgb(192, 190, 190) ;
+} 
+.truyentranh a, .lightnovel a, .lightnovel p, .truyentranh p{
+    color: rgb(231, 122, 44);
+    font-size: 14px;
+}
+.yeuthich{
+   width: 30%;
+   background-color: rgb(248, 236, 236);
+}
+.first{
+    line-height: 40px;
+    background-color: rgb(241, 216, 216);
+    height: 40px;
+}
+.gioithieu{
+    display: flex;
+    flex-direction: row;
+}
+.yeuthich a{color: black;}
+.yeuthich p:hover{
+    background-color: rgb(241, 216, 216);
+    height: 30px;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+.bannerlist{
+    background-color: rgb(248, 143, 105);
+    height: 40px;
+    line-height: 35px;
+}
+.xemthem {
+    width: 100px;
+    background-color: rgb(255, 153, 116);
+    margin-left: 600px;
+    border-radius: 5px;
+    border-color: rgb(255, 153, 116);
+    height: 30px;
+}
+.xemthem a{color: rgb(250, 79, 17); font-weight: bold;}
+.bannerlistf{
+    background-color: rgb(248, 143, 105);
+    height: 100px;
+    line-height: 100px;
+    font-size: 20px;
+    color: white;
+}
+.dangky{
+    color: rgb(250, 119, 43);
+    width: 100px;
+    height: 40px;
+    background-color: rgb(248, 214, 150);
+    border-color: rgb(251, 255, 196);
+    font-weight: bold;
+    border-radius: 7px;
+}
+.dangkytxt{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+p.giabia{color: red; font-size: 17px;}
+
